@@ -1,0 +1,14 @@
+.menuButton {
+  font-size: 26px;
+  background-color: transparent;
+  border: none;
+  color: #ececec;
+  padding: 0 10px;
+  transition: font-size 0.25s, color 0.25s;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+}

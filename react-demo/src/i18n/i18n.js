@@ -15,12 +15,22 @@ i18next
     resources: {
       en: {
         translation: {
-          init: 'Init message translation',
+          polish: 'polish',
+          english: 'english',
+          home: 'Home',
+          about: 'About',
+          gallery: 'Gallery',
+          contact: 'Contact',
         },
       },
       pl: {
         translation: {
-          init: 'wiadomość powitalna',
+          polish: 'polski',
+          english: 'angielski',
+          home: 'Start',
+          about: 'O mnie',
+          gallery: 'Galeria',
+          contact: 'Kontakt',
         },
       },
     },

@@ -1,0 +1,11 @@
+.langButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.langButton:hover {
+  text-decoration: underline;
+}
