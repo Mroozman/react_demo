@@ -5,4 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #385170;
+  color: #ececec;
+}
+/* Color palette */
+.first-color {
+  background: #ececec;
+}
+
+.second-color {
+  background: #9fd3c7;
+}
+
+.third-color {
+  background: #385170;
+}
+
+.fourth-color {
+  background: #142d4c;
 }
