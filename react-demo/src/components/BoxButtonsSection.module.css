@@ -1,0 +1,26 @@
+.boxButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.boxButtonsRow {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+}
+
+.center {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+}

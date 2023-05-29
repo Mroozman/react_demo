@@ -1,0 +1,17 @@
+.boxButton {
+  display: flex;
+  width: 350px;
+  height: 200px;
+  border-radius: 25px;
+  border-style: dotted;
+  border-color: #9fd3c7;
+  background-color: #142d4c;
+  color: #ececec;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxButtonText {
+  font-size: 30px;
+}
