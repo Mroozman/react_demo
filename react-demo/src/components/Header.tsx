@@ -7,7 +7,13 @@ const Header = () => {
   return (
     <>
       <div className={styles.header}>
-        <span className={styles.left}></span>
+        <div className={styles.left}>
+          <img
+            className={styles.logoPicture}
+            src={require('../images/reactLogo.png')}
+          />
+          <p className={styles.logoText}>REACT-DEMO</p>
+        </div>
         <span className={styles.menu}>
           <HeaderMenu />
         </span>

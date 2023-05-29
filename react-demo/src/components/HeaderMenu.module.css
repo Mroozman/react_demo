@@ -1,14 +1,20 @@
 .menuButton {
   font-size: 26px;
   background-color: transparent;
-  border: none;
+  border-style: solid;
+  border-color: transparent;
   color: #ececec;
-  padding: 0 10px;
-  transition: font-size 0.25s, color 0.25s;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: color 0.25s, box-shadow 0.25s;
 }
 
 .menuButton:hover {
   cursor: pointer;
-  font-size: 28px;
   color: white;
+  border-style: solid;
+  border-color: #9fd3c7;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
 }
