@@ -24,3 +24,35 @@
 .right {
   flex: 1;
 }
+
+.appearLeft {
+  animation-name: appearLeft;
+  animation-duration: 1.5s;
+}
+
+.appearRight {
+  animation-name: appearRight;
+  animation-duration: 1.5s;
+}
+
+@keyframes appearLeft {
+  from {
+    opacity: 0%;
+    margin-right: 500px;
+  }
+  to {
+    margin-right: 0px;
+    opacity: 100%;
+  }
+}
+
+@keyframes appearRight {
+  from {
+    opacity: 0%;
+    margin-left: 500px;
+  }
+  to {
+    margin-left: 0px;
+    opacity: 100%;
+  }
+}

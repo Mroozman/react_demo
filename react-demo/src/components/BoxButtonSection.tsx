@@ -8,28 +8,36 @@ const BoxButtonsSection = () => {
       <div className={styles.boxButtonsRow}>
         <div className={styles.left}></div>
         <div className={styles.center}>
-          <BoxButton
-            textForButton="Example"
-            pictureForButton={dogeExamplePicture}
-          ></BoxButton>
-          <BoxButton
-            textForButton="Example"
-            pictureForButton={dogeExamplePicture}
-          ></BoxButton>
+          <span className={styles.appearLeft}>
+            <BoxButton
+              textForButton="Example"
+              pictureForButton={dogeExamplePicture}
+            ></BoxButton>
+          </span>
+          <span className={styles.appearRight}>
+            <BoxButton
+              textForButton="Example"
+              pictureForButton={dogeExamplePicture}
+            ></BoxButton>
+          </span>
         </div>
         <div className={styles.right}></div>
       </div>
       <div className={styles.boxButtonsRow}>
         <div className={styles.left}></div>
         <div className={styles.center}>
-          <BoxButton
-            textForButton="Example"
-            pictureForButton={dogeExamplePicture}
-          ></BoxButton>
-          <BoxButton
-            textForButton="Example"
-            pictureForButton={dogeExamplePicture}
-          ></BoxButton>
+          <span className={styles.appearLeft}>
+            <BoxButton
+              textForButton="Example"
+              pictureForButton={dogeExamplePicture}
+            ></BoxButton>
+          </span>
+          <span className={styles.appearRight}>
+            <BoxButton
+              textForButton="Example"
+              pictureForButton={dogeExamplePicture}
+            ></BoxButton>
+          </span>
         </div>
         <div className={styles.right}></div>
       </div>
