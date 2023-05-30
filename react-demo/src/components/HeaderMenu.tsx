@@ -12,9 +12,15 @@ const HeaderMenu = () => {
       <Link to="about" className={styles.menuButton}>
         {t('about')}
       </Link>
-      <button className={styles.menuButton}>API</button>
-      <button className={styles.menuButton}>{t('gallery')}</button>
-      <button className={styles.menuButton}>{t('contact')}</button>
+      <Link to="api" className={styles.menuButton}>
+        API
+      </Link>
+      <Link to="gallery" className={styles.menuButton}>
+        {t('gallery')}
+      </Link>
+      <Link to="contact" className={styles.menuButton}>
+        {t('contact')}
+      </Link>
     </>
   );
 };

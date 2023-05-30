@@ -6,7 +6,9 @@ import './i18n/i18n';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import StartLayout from './routes/StartLayout';
 import AboutLayout from './routes/AboutLayout';
-
+import APILayout from './routes/APILayout';
+import GalleryLayout from './routes/GalleryLayout';
+import ContactLayout from './routes/ContactLayout';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,6 +21,18 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <AboutLayout />,
+      },
+      {
+        path: 'api',
+        element: <APILayout />,
+      },
+      {
+        path: 'gallery',
+        element: <GalleryLayout />,
+      },
+      {
+        path: 'contact',
+        element: <ContactLayout />,
       },
     ],
   },
