@@ -7,6 +7,7 @@ const HeaderMenu = () => {
     <>
       <button className={styles.menuButton}>{t('home')}</button>
       <button className={styles.menuButton}>{t('about')}</button>
+      <button className={styles.menuButton}>API</button>
       <button className={styles.menuButton}>{t('gallery')}</button>
       <button className={styles.menuButton}>{t('contact')}</button>
     </>

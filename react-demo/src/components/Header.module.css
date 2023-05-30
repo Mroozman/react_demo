@@ -6,6 +6,8 @@
   height: 50px;
   background-color: #142d4c;
   padding: 20px 30px;
+  position: sticky;
+  top: 0;
 }
 
 .logoText {
