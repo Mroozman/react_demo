@@ -4,13 +4,13 @@ import Header from './components/Header';
 import BoxButtonsSection from './components/BoxButtonSection';
 import WelcomeSection from './components/WelcomeSection';
 import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom';
 function App() {
   const { t } = useTranslation();
   return (
-    <div className="app">
+    <div>
       <Header />
-      <WelcomeSection />
-      <BoxButtonsSection />
+      <Outlet />
       <Footer />
     </div>
   );
