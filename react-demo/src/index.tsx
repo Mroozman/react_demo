@@ -5,6 +5,7 @@ import './index.css';
 import './i18n/i18n';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import StartLayout from './routes/StartLayout';
+import AboutLayout from './routes/AboutLayout';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <StartLayout />,
+      },
+      {
+        path: 'about',
+        element: <AboutLayout />,
       },
     ],
   },
