@@ -1,8 +1,14 @@
 import styles from './BoxButtonsSection.module.css';
 import BoxButton from './BoxButton';
+import { useTranslation } from 'react-i18next';
 
 const BoxButtonsSection = () => {
+  const { t } = useTranslation();
   const dogeExamplePicture = require('../images/doge.png');
+  const aboutPicture = require('../images/laptop.jpg');
+  const apiPicture = require('../images/api.jpg');
+  const galleryPicture = require('../images/gallery.jpg');
+  const contactPicture = require('../images/kontakt.jpg');
   return (
     <div className={styles.boxButtons}>
       <div className={styles.boxButtonsRow}>
@@ -10,14 +16,14 @@ const BoxButtonsSection = () => {
         <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
-              textForButton="Example"
-              pictureForButton={dogeExamplePicture}
+              textForButton={t('about')}
+              pictureForButton={aboutPicture}
             ></BoxButton>
           </span>
           <span className={styles.appearRight}>
             <BoxButton
-              textForButton="Example"
-              pictureForButton={dogeExamplePicture}
+              textForButton="API"
+              pictureForButton={apiPicture}
             ></BoxButton>
           </span>
         </div>
@@ -28,14 +34,14 @@ const BoxButtonsSection = () => {
         <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
-              textForButton="Example"
-              pictureForButton={dogeExamplePicture}
+              textForButton={t('gallery')}
+              pictureForButton={galleryPicture}
             ></BoxButton>
           </span>
           <span className={styles.appearRight}>
             <BoxButton
-              textForButton="Example"
-              pictureForButton={dogeExamplePicture}
+              textForButton={t('contact')}
+              pictureForButton={contactPicture}
             ></BoxButton>
           </span>
         </div>
