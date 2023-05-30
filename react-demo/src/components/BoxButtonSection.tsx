@@ -6,8 +6,8 @@ const BoxButtonsSection = () => {
   return (
     <div className={styles.boxButtons}>
       <div className={styles.boxButtonsRow}>
-        <div className={styles.left}></div>
-        <div className={styles.center}>
+        <div className="left"></div>
+        <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
               textForButton="Example"
@@ -21,11 +21,11 @@ const BoxButtonsSection = () => {
             ></BoxButton>
           </span>
         </div>
-        <div className={styles.right}></div>
+        <div className="right"></div>
       </div>
       <div className={styles.boxButtonsRow}>
-        <div className={styles.left}></div>
-        <div className={styles.center}>
+        <div className="left"></div>
+        <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
               textForButton="Example"
@@ -39,7 +39,7 @@ const BoxButtonsSection = () => {
             ></BoxButton>
           </span>
         </div>
-        <div className={styles.right}></div>
+        <div className="right"></div>
       </div>
     </div>
   );

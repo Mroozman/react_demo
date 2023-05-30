@@ -12,6 +12,21 @@ html {
   color: #ececec;
 }
 
+.left {
+  flex: 1;
+  display: flex;
+}
+
+.center {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+}
+
 /* Color palette */
 .first-color {
   background: #ececec;
