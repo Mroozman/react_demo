@@ -16,12 +16,14 @@ const BoxButtonsSection = () => {
         <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
+              pathForButton="about"
               textForButton={t('about')}
               pictureForButton={aboutPicture}
             ></BoxButton>
           </span>
           <span className={styles.appearRight}>
             <BoxButton
+              pathForButton="/"
               textForButton="API"
               pictureForButton={apiPicture}
             ></BoxButton>
@@ -34,12 +36,14 @@ const BoxButtonsSection = () => {
         <div className="center">
           <span className={styles.appearLeft}>
             <BoxButton
+              pathForButton="/"
               textForButton={t('gallery')}
               pictureForButton={galleryPicture}
             ></BoxButton>
           </span>
           <span className={styles.appearRight}>
             <BoxButton
+              pathForButton="/"
               textForButton={t('contact')}
               pictureForButton={contactPicture}
             ></BoxButton>

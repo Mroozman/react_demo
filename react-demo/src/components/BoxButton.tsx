@@ -1,13 +1,19 @@
 import styles from './BoxButton.module.css';
 import { useState } from 'react';
 import CSS from 'csstype';
+import { Link } from 'react-router-dom';
 
 type Props = {
   textForButton: string;
-  pictureForButton?: string;
+  pictureForButton: string;
+  pathForButton: string;
 };
 
-const BoxButton = ({ pictureForButton, textForButton }: Props) => {
+const BoxButton = ({
+  pictureForButton,
+  textForButton,
+  pathForButton,
+}: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -23,8 +29,8 @@ const BoxButton = ({ pictureForButton, textForButton }: Props) => {
     height: '200px',
     margin: '10px 40px',
     borderRadius: '25px',
-    borderStyle: isHover ? 'solid' : 'none',
-    borderColor: '#9fd3c7',
+    borderStyle: isHover ? 'solid' : 'solid',
+    borderColor: isHover ? '#9fd3c7' : 'transparent',
     backgroundColor: '#142d4c',
     backgroundImage: isHover ? `url(${pictureForButton})` : 'none',
     backgroundSize: '350px 200px',
@@ -33,16 +39,18 @@ const BoxButton = ({ pictureForButton, textForButton }: Props) => {
     alignItems: 'center',
     justifyContent: 'center',
     cursor: 'pointer',
+    textDecoration: 'none',
   };
 
   return (
-    <button
+    <Link
+      to={pathForButton}
       style={boxButton}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <span className={styles.boxButtonText}>{textForButton}</span>
-    </button>
+    </Link>
   );
 };
 export default BoxButton;
