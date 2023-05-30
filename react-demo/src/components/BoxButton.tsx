@@ -28,10 +28,11 @@ const BoxButton = ({ pictureForButton, textForButton }: Props) => {
     backgroundColor: '#142d4c',
     backgroundImage: isHover ? `url(${pictureForButton})` : 'none',
     backgroundSize: '350px 200px',
-    color: isHover ? 'black' : '#ececec',
+    color: '#ececec',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    cursor: 'pointer',
   };
 
   return (
