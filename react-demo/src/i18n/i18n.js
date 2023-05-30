@@ -21,6 +21,9 @@ i18next
           about: 'About',
           gallery: 'Gallery',
           contact: 'Contact',
+          welcomeTextTitle: 'Welcome!',
+          welcomeText:
+            'My name is Maciej Mróz and this is a demo react frontend app I created to show my skills for recruiters. I hope you will enjoy the site and code :)',
         },
       },
       pl: {
@@ -31,6 +34,9 @@ i18next
           about: 'O mnie',
           gallery: 'Galeria',
           contact: 'Kontakt',
+          welcomeTextTitle: 'Witaj!',
+          welcomeText:
+            'Nazywam się Maciej Mróz, a to jest demo aplikacji frontendowej, którą stworzyłem by pokazać moje umiejętności dla celów rekrutacji. Mam nadzieję że strona i kod się wam spodoba :)',
         },
       },
     },
