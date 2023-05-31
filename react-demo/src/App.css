@@ -1,6 +1,4 @@
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  position: relative;
+  min-height: 100vh;
 }

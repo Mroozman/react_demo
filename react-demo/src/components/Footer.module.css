@@ -8,4 +8,7 @@
   color: #ddd;
   height: 40px;
   font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
