@@ -1,6 +1,12 @@
 import styles from './APILayout.module.css';
 
 const APILayout = () => {
-  return <>API Page</>;
+  return (
+    <div className={styles.strech}>
+      <span className={styles.pageInBuild}>
+        <h2>Page under construction </h2>
+      </span>
+    </div>
+  );
 };
 export default APILayout;

@@ -1,0 +1,8 @@
+.strech {
+  height: 82vh;
+}
+
+.pageInBuild {
+  display: flex;
+  justify-content: center;
+}
