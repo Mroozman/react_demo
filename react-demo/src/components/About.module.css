@@ -18,25 +18,17 @@
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
-  animation-name: appear;
-  animation-duration: 1s;
+  border-radius: 200px;
 }
 
 .personalTexts {
   display: flex;
   flex-direction: column;
   width: 60%;
-  animation-name: appear;
-  animation-duration: 0.5s;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
+  padding: 0 15px;
+  background-color: #274060;
+  border-radius: 25px;
+  border: 2px solid #142d4c;
 }
 
 .infoLinks {
@@ -52,7 +44,7 @@
   color: #ececec;
   margin: 15px;
   animation-name: longAppearRight;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 .cv {
@@ -62,7 +54,7 @@
   color: #ececec;
   margin: 15px;
   animation-name: longAppearLeft;
-  animation-duration: 1.8s;
+  animation-duration: 1.4s;
 }
 
 @keyframes longAppearRight {
