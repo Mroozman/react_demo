@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const Contacts = () => {
   const { t } = useTranslation();
-  const contactStyles = `center ${styles.contacts}`;
   const copyMailStyles = `${styles.contactInfo} ${styles.copyMail}`;
   const [copyMessage, setCopyMessage] = useState(false);
 
@@ -21,7 +20,7 @@ const Contacts = () => {
     <>
       <div className={styles.contactsSeciton}>
         <div className="left"></div>
-        <div className={contactStyles}>
+        <div className={styles.contacts}>
           <h1>{t('contactTitle')}</h1>
           <Link
             className={styles.socialLink}

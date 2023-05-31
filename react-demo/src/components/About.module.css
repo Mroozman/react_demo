@@ -1,0 +1,112 @@
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  margin: 35px 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 60%;
+}
+
+.myPhoto {
+  height: 300px;
+  margin: 0 40px;
+  border: 2px #142d4c solid;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.personalTexts {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  animation-name: appear;
+  animation-duration: 0.5s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.infoLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ececec;
+  margin: 15px;
+  animation-name: longAppearRight;
+  animation-duration: 1.5s;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ececec;
+  margin: 15px;
+  animation-name: longAppearLeft;
+  animation-duration: 1.8s;
+}
+
+@keyframes longAppearRight {
+  0% {
+    opacity: 0%;
+    margin-left: 300px;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    margin-left: 15px;
+    opacity: 100%;
+  }
+}
+
+@keyframes longAppearLeft {
+  0% {
+    margin-right: 300px;
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    margin-right: 15px;
+    opacity: 100%;
+  }
+}
+
+.github:hover,
+.cv:hover {
+  text-decoration: underline;
+}
+
+.githubLogo {
+  width: 40px;
+  margin: 0 5px;
+}
+
+.cvLogo {
+  width: 40px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+}

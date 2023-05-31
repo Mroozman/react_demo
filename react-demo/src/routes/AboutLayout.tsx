@@ -1,6 +1,7 @@
 import styles from './AboutLayout.module.css';
+import About from '../components/About';
 
 const AboutLayout = () => {
-  return <>Jezdem Madźek</>;
+  return <About />;
 };
 export default AboutLayout;
