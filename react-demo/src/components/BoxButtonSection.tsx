@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 
 const BoxButtonsSection = () => {
   const { t } = useTranslation();
-  const dogeExamplePicture = require('../images/doge.png');
   const aboutPicture = require('../images/laptop.jpg');
   const apiPicture = require('../images/api.jpg');
   const galleryPicture = require('../images/gallery.jpg');
