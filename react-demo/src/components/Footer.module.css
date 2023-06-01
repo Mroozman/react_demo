@@ -1,7 +1,6 @@
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   background-color: #152e4c;
   opacity: 65%;
@@ -11,4 +10,27 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.footerText {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.attributes {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.attributesButton {
+  background-color: #152e4c;
+  border: none;
+  border-radius: 20px;
+  color: #ddd;
+  cursor: pointer;
+  margin-right: 20px;
 }
