@@ -4,7 +4,7 @@ const GalleryLayout = () => {
   return (
     <div className={styles.strech}>
       <span className={styles.pageInBuild}>
-        <h2>Page under construction </h2>
+        <h2>Gallery page under construction </h2>
       </span>
     </div>
   );
