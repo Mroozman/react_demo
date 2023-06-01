@@ -54,7 +54,7 @@
   color: #ececec;
   margin: 15px;
   animation-name: longAppearLeft;
-  animation-duration: 1.4s;
+  animation-duration: 1.8s;
 }
 
 @keyframes longAppearRight {
@@ -76,7 +76,7 @@
     margin-right: 300px;
     opacity: 0%;
   }
-  80% {
+  60% {
     opacity: 0%;
   }
   100% {
