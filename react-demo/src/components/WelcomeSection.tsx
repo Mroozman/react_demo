@@ -8,8 +8,8 @@ const WelcomeSection = () => {
       <div className={styles.welcomeSection}>
         <div className="left"></div>
         <div className={welcomeTextStyles}>
-          <h2>{t('welcomeTextTitle')}</h2>
-          <p>{t('welcomeText')}</p>
+          <h2 data-testid="welcomeTitle">{t('welcomeTextTitle')}</h2>
+          <p data-testid="welcomeText">{t('welcomeText')}</p>
         </div>
         <div className="right"></div>
       </div>
