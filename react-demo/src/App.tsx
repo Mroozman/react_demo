@@ -7,7 +7,7 @@ import Attributes from './components/Attributes';
 import { useState } from 'react';
 function App() {
   const { t } = useTranslation();
-  const [attributesVisible, setAttributesVisible] = useState(true);
+  const [attributesVisible, setAttributesVisible] = useState(false);
 
   const toggleAttributesModal = (): void => {
     setAttributesVisible((prevState) => !prevState);
