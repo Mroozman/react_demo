@@ -48,6 +48,7 @@ const BoxButton = ({
       style={boxButton}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      data-testid="boxButton"
     >
       <span className={styles.boxButtonText}>{textForButton}</span>
     </Link>
