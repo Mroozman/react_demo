@@ -9,7 +9,6 @@ import AboutLayout from './routes/AboutLayout';
 import APILayout from './routes/APILayout';
 import GalleryLayout from './routes/GalleryLayout';
 import ContactLayout from './routes/ContactLayout';
-import { HashRouter as Router } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -44,8 +43,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
-      <RouterProvider router={router} />
-    </Router>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
