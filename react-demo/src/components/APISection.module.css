@@ -1,0 +1,50 @@
+.apiSectionWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.apiSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.dataApiSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.weatherModule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #9fd3c7;
+  background-color: #142d4c;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 20px 10px;
+}
+
+.timezone {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.weatherInfo {
+  margin: 5px 0px;
+}
+
+.attributeLink {
+  color: #ececec;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.attributeLink:hover {
+  text-decoration: underline;
+}
