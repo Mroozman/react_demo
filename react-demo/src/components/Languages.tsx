@@ -11,11 +11,19 @@ const Languages = () => {
   };
   return (
     <div className={styles.languages}>
-      <button onClick={changeToPolishHandler} className={styles.langButton}>
+      <button
+        onClick={changeToPolishHandler}
+        className={styles.langButton}
+        data-testid="polish"
+      >
         {t('polish')}
       </button>{' '}
       |
-      <button onClick={changeToEnglishHandler} className={styles.langButton}>
+      <button
+        onClick={changeToEnglishHandler}
+        className={styles.langButton}
+        data-testid="english"
+      >
         {t('english')}
       </button>
     </div>
