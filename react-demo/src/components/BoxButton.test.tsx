@@ -47,4 +47,21 @@ describe('BoxButton component', () => {
       `background-image: url(${mockPictureForButton})`
     );
   });
+
+  test('renders box button correct path', () => {
+    render(
+      <BrowserRouter>
+        <I18nextProvider i18n={i18n}>
+          <BoxButton
+            textForButton={mockTextForButton}
+            pictureForButton={mockPictureForButton}
+            pathForButton={mockPathForButton}
+          />
+        </I18nextProvider>
+      </BrowserRouter>
+    );
+    const boxButtonPath = screen.getByTestId('boxButton');
+    fireEvent.click(boxButtonPath);
+    expect(global.window.location.href).toContain('http://localhost/testPath');
+  });
 });
