@@ -1,7 +1,22 @@
 .attributes {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 15px 30px;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+h3 {
+  margin: 0px 0px 10px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .attributeLink {
