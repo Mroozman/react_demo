@@ -7,7 +7,7 @@ const Header = () => {
     <>
       <div className={styles.header}>
         <div className={styles.left}>
-          <Link className={styles.logoLink} to="/">
+          <Link className={styles.logoLink} to="/" data-testid="reactLogo">
             <img
               className={styles.logoPicture}
               src={require('../images/reactLogo.png')}
