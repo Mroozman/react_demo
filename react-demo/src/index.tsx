@@ -6,7 +6,7 @@ import './i18n/i18n';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import StartLayout from './routes/StartLayout';
 import AboutLayout from './routes/AboutLayout';
-import APILayout from './routes/APILayout';
+import APILayout, { loader as wheatherLoader } from './routes/APILayout';
 import GalleryLayout from './routes/GalleryLayout';
 import ContactLayout from './routes/ContactLayout';
 const router = createBrowserRouter([
@@ -25,6 +25,7 @@ const router = createBrowserRouter([
       {
         path: 'api',
         element: <APILayout />,
+        loader: wheatherLoader,
       },
       {
         path: 'gallery',
