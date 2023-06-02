@@ -6,6 +6,7 @@
 .apiSection {
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 
 .title {
@@ -25,7 +26,7 @@
   justify-content: center;
   border: 1px solid #9fd3c7;
   background-color: #142d4c;
-  padding: 15px;
+  padding: 15px 25px;
   border-radius: 25px;
   margin: 20px 10px;
 }
