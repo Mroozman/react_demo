@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import CardsData from '../dataModels/ApiCardsData';
 import Card from '../dataModels/ApiCard';
+import { Link } from 'react-router-dom';
 
 const DrawCardApi = () => {
   const { t } = useTranslation();
@@ -33,9 +34,19 @@ const DrawCardApi = () => {
   return (
     <>
       {!pickedCard && (
-        <button onClick={drawCardHandler} className={styles.drawCardButton}>
-          {t('drawCard')}
-        </button>
+        <>
+          <button onClick={drawCardHandler} className={styles.drawCardButton}>
+            {t('drawCard')}
+          </button>
+          <Link
+            className={styles.attributeLink}
+            to="https://open-meteo.com/"
+            target="_blank"
+          >
+            Card data by deckofcardsapi.com
+            {/* Attributes are not translated */}
+          </Link>
+        </>
       )}
       {pickedCard && (
         <>
@@ -55,6 +66,14 @@ const DrawCardApi = () => {
           >
             {t('drawAnotherCard')}
           </button>
+          <Link
+            className={styles.attributeLink}
+            to="https://open-meteo.com/"
+            target="_blank"
+          >
+            Card data by deckofcardsapi.com
+            {/* Attributes are not translated */}
+          </Link>
         </>
       )}
     </>

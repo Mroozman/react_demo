@@ -37,7 +37,7 @@
 }
 
 .selectedCardImage {
-  height: 250px;
+  height: 150px;
 }
 
 .cardInfo {
@@ -46,4 +46,14 @@
   margin: 15px;
   align-items: center;
   justify-content: center;
+}
+
+.attributeLink {
+  color: #ececec;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.attributeLink:hover {
+  text-decoration: underline;
 }
