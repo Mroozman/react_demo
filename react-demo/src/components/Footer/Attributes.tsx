@@ -1,5 +1,5 @@
 import styles from './Attributes.module.css';
-import Modal from './Modal';
+import Modal from '../Modal';
 import { Link } from 'react-router-dom';
 
 type Props = {

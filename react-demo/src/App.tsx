@@ -1,9 +1,9 @@
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import Header from './components/Header/Header';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import { Outlet } from 'react-router-dom';
-import Attributes from './components/Attributes';
+import Attributes from './components/Footer/Attributes';
 import { useState } from 'react';
 function App() {
   const { t } = useTranslation();
