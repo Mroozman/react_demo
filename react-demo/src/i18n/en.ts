@@ -50,5 +50,15 @@ export const en = {
       10: 'Ten of',
     },
     drawAnotherCard: 'Draw other card!',
+    alt: {
+      react: 'React logo',
+      me: 'My photo',
+      github: 'Github logo',
+      cv: 'Curriculum vitae logo',
+      card: 'Card picture',
+      linkedin: 'Linkedin logo',
+      messenger: 'Messenger logo',
+      gmail: 'Gmail logo',
+    },
   },
 } as const;

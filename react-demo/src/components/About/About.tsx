@@ -10,6 +10,7 @@ const About = () => {
         <div className={styles.about}>
           <img
             className={styles.myPhoto}
+            alt={t('alt.me') as string}
             src={require('../../images/ja.jpg')}
           />
           <span className={styles.personalTexts}>
@@ -28,6 +29,7 @@ const About = () => {
           {t('github')}
           <img
             className={styles.githubLogo}
+            alt={t('alt.github') as string}
             src={require('../../images/github.png')}
           />
         </Link>
@@ -38,7 +40,11 @@ const About = () => {
           download
         >
           {t('cv')}
-          <img className={styles.cvLogo} src={require('../../images/cv.png')} />
+          <img
+            className={styles.cvLogo}
+            alt={t('alt.cv') as string}
+            src={require('../../images/cv.png')}
+          />
         </Link>
       </div>
     </>

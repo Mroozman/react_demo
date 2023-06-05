@@ -11,7 +11,7 @@ const Contacts = () => {
   const copyMail = () => {
     navigator.clipboard.writeText('mrozman24@gmail.com');
     setCopyMessage(true);
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setCopyMessage(false);
     }, 1500);
   };
@@ -30,6 +30,7 @@ const Contacts = () => {
             <h2 className={styles.contactInfo}>
               <img
                 className={styles.linkedinLogo}
+                alt={t('alt.linkedin') as string}
                 src={require('../../images/linkedin.png')}
               />
               Linkedin
@@ -43,6 +44,7 @@ const Contacts = () => {
             <h2 className={styles.contactInfo}>
               <img
                 className={styles.messengerLogo}
+                alt={t('alt.messenger') as string}
                 src={require('../../images/messenger.png')}
               />
               Messenger
@@ -51,6 +53,7 @@ const Contacts = () => {
           <h2 onClick={copyMail} className={copyMailStyles}>
             <img
               className={styles.gmailLogo}
+              alt={t('alt.gmail') as string}
               src={require('../../images/gmail.png')}
             />
             Mrozman24@gmail.com

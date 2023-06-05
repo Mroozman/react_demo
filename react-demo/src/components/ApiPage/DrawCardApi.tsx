@@ -58,7 +58,11 @@ const DrawCardApi = () => {
                 {t(`cards.${pickedCard!.suit}`)}
               </p>
             </div>
-            <img className={styles.selectedCardImage} src={pickedCard.image} />
+            <img
+              className={styles.selectedCardImage}
+              alt={t('alt.card') as string}
+              src={pickedCard.image}
+            />
           </div>
           <button
             onClick={drawCardHandler}

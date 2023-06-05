@@ -50,5 +50,15 @@ export const pl = {
       10: 'Dziesiątka',
     },
     drawAnotherCard: 'Wylosuj inną kartę!',
+    alt: {
+      react: 'Logo Reacta',
+      me: 'Moje zdjęcie',
+      github: 'Logo Githuba',
+      cv: 'Logo curriculum vitae',
+      card: 'Zdjęcie karty',
+      linkedin: 'Logo Linkedina',
+      messenger: 'Logo Messengera',
+      gmail: 'Logo Gmaila',
+    },
   },
 } as const;
