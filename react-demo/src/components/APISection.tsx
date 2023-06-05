@@ -4,15 +4,17 @@ import WeatherData from '../dataModels/WeatherData';
 import ApiWeatherData from '../dataModels/ApiWeatherData';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import DrawCard from './DrawCard';
+
 const APISection = () => {
   const { t } = useTranslation();
-  const apiData: ApiWeatherData = useLoaderData() as ApiWeatherData;
-  const weatherData: WeatherData = new WeatherData(
-    apiData.temperature,
-    apiData.windspeed,
-    apiData.winddirection
-  );
 
+  const apiWeatherData: ApiWeatherData = useLoaderData() as ApiWeatherData;
+  const weatherData: WeatherData = new WeatherData(
+    apiWeatherData.temperature,
+    apiWeatherData.windspeed,
+    apiWeatherData.winddirection
+  );
   const windDirection = t(weatherData.windDirectionName);
 
   return (
@@ -21,7 +23,7 @@ const APISection = () => {
       <div className={styles.apiSection}>
         <h2 className={styles.title}>{t('apiTitle')}</h2>
         <div className={styles.dataApiSection}>
-          <div className={styles.weatherModule}>
+          <div className={styles.apiBox}>
             <p className={styles.timezone}>{t('timeZone')}</p>
             <p className={styles.weatherInfo}>{`${t('temperature')} ${
               weatherData.temperature
@@ -40,6 +42,9 @@ const APISection = () => {
               Weather data by Open-Meteo.com
               {/* Attributes are not translated */}
             </Link>
+          </div>
+          <div className={styles.apiBox}>
+            <DrawCard />
           </div>
         </div>
       </div>

@@ -18,9 +18,10 @@
 .dataApiSection {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.weatherModule {
+.apiBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
