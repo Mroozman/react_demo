@@ -1,10 +1,10 @@
-import styles from './DrawCard.module.css';
+import styles from './DrawCardApi.module.css';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import CardsData from '../dataModels/ApiCardsData';
 import Card from '../dataModels/ApiCard';
 
-const DrawCard = () => {
+const DrawCardApi = () => {
   const { t } = useTranslation();
   const [pickedCard, setPickedCard] = useState<Card>();
 
@@ -60,4 +60,4 @@ const DrawCard = () => {
     </>
   );
 };
-export default DrawCard;
+export default DrawCardApi;

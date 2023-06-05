@@ -1,0 +1,18 @@
+.timezone {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.weatherInfo {
+  margin: 5px 0px;
+}
+
+.attributeLink {
+  color: #ececec;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.attributeLink:hover {
+  text-decoration: underline;
+}

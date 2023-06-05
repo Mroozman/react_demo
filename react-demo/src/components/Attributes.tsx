@@ -9,6 +9,7 @@ type Props = {
 const Attributes = ({ closeModal }: Props) => {
   return (
     <Modal closeModal={closeModal}>
+      {/* Attributes are not translated */}
       <div className={styles.attributes}>
         <h3>Icons on this site was provided by authors from Flaticon:</h3>
         <Link
