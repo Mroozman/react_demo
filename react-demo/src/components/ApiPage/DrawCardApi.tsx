@@ -1,8 +1,8 @@
 import styles from './DrawCardApi.module.css';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import CardsData from '../dataModels/ApiCardsData';
-import Card from '../dataModels/ApiCard';
+import CardsData from '../../dataModels/ApiCardsData';
+import Card from '../../dataModels/ApiCard';
 import { Link } from 'react-router-dom';
 
 const DrawCardApi = () => {

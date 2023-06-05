@@ -1,5 +1,5 @@
 import styles from './APILayout.module.css';
-import APISection from '../components/APISection';
+import APISection from '../components/ApiPage/APISection';
 
 const APILayout = () => {
   return <APISection />;

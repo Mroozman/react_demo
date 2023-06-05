@@ -1,7 +1,7 @@
 import styles from './WeatherApi.module.css';
 import { useLoaderData } from 'react-router-dom';
-import WeatherData from '../dataModels/WeatherData';
-import ApiWeatherData from '../dataModels/ApiWeatherData';
+import WeatherData from '../../dataModels/WeatherData';
+import ApiWeatherData from '../../dataModels/ApiWeatherData';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 const WeatherApi = () => {
