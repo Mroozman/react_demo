@@ -8,7 +8,10 @@ const About = () => {
       <div className={styles.aboutSection}>
         <div className="left"></div>
         <div className={styles.about}>
-          <img className={styles.myPhoto} src={require('../images/ja.jpg')} />
+          <img
+            className={styles.myPhoto}
+            src={require('../../images/ja.jpg')}
+          />
           <span className={styles.personalTexts}>
             <h2 className={styles.myName}>Maciej Mróz</h2>
             <p>{t('aboutMe')}</p>
@@ -25,7 +28,7 @@ const About = () => {
           {t('github')}
           <img
             className={styles.githubLogo}
-            src={require('../images/github.png')}
+            src={require('../../images/github.png')}
           />
         </Link>
         <Link
@@ -35,7 +38,7 @@ const About = () => {
           download
         >
           {t('cv')}
-          <img className={styles.cvLogo} src={require('../images/cv.png')} />
+          <img className={styles.cvLogo} src={require('../../images/cv.png')} />
         </Link>
       </div>
     </>

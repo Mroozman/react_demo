@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 const BoxButtonsSection = () => {
   const { t } = useTranslation();
-  const aboutPicture = require('../images/laptop.jpg');
-  const apiPicture = require('../images/api.jpg');
-  const galleryPicture = require('../images/gallery.jpg');
-  const contactPicture = require('../images/kontakt.jpg');
+  const aboutPicture = require('../../images/laptop.jpg');
+  const apiPicture = require('../../images/api.jpg');
+  const galleryPicture = require('../../images/gallery.jpg');
+  const contactPicture = require('../../images/kontakt.jpg');
   return (
     <div className={styles.boxButtons}>
       <div className={styles.boxButtonsRow}>

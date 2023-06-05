@@ -1,5 +1,5 @@
-import WelcomeSection from '../components/WelcomeSection';
-import BoxButtonsSection from '../components/BoxButtonSection';
+import WelcomeSection from '../components/StartPage/WelcomeSection';
+import BoxButtonsSection from '../components/StartPage/BoxButtonSection';
 import styles from './StartLayout.module.css';
 const StartLayout = () => {
   return (
