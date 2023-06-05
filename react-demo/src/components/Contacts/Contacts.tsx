@@ -30,7 +30,7 @@ const Contacts = () => {
             <h2 className={styles.contactInfo}>
               <img
                 className={styles.linkedinLogo}
-                src={require('../images/linkedin.png')}
+                src={require('../../images/linkedin.png')}
               />
               Linkedin
             </h2>
@@ -43,7 +43,7 @@ const Contacts = () => {
             <h2 className={styles.contactInfo}>
               <img
                 className={styles.messengerLogo}
-                src={require('../images/messenger.png')}
+                src={require('../../images/messenger.png')}
               />
               Messenger
             </h2>
@@ -51,7 +51,7 @@ const Contacts = () => {
           <h2 onClick={copyMail} className={copyMailStyles}>
             <img
               className={styles.gmailLogo}
-              src={require('../images/gmail.png')}
+              src={require('../../images/gmail.png')}
             />
             Mrozman24@gmail.com
           </h2>
