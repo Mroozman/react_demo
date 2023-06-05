@@ -10,7 +10,7 @@ const Header = () => {
           <Link className={styles.logoLink} to="/" data-testid="reactLogo">
             <img
               className={styles.logoPicture}
-              src={require('../images/reactLogo.png')}
+              src={require('../../images/reactLogo.png')}
             />
             <p className={styles.logoText}>REACT-DEMO</p>
           </Link>
