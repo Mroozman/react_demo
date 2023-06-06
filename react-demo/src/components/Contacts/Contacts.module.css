@@ -44,8 +44,16 @@
   color: #ececec;
 }
 
+.socialLink:hover {
+  text-decoration: underline;
+}
+
 .copyMail {
   cursor: pointer;
+}
+
+.copyMail:hover {
+  text-decoration: underline;
 }
 
 .copiedMessage {

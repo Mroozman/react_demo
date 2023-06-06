@@ -26,6 +26,7 @@ const Contacts = () => {
             className={styles.socialLink}
             to="https://www.linkedin.com/in/maciej-mr%C3%B3z-993b92206/"
             target="_blank"
+            data-testid="linkedin"
           >
             <h2 className={styles.contactInfo}>
               <img
@@ -40,6 +41,7 @@ const Contacts = () => {
             className={styles.socialLink}
             to="https://m.me/mroozman"
             target="_blank"
+            data-testid="messenger"
           >
             <h2 className={styles.contactInfo}>
               <img
@@ -50,7 +52,7 @@ const Contacts = () => {
               Messenger
             </h2>
           </Link>
-          <h2 onClick={copyMail} className={copyMailStyles}>
+          <h2 onClick={copyMail} className={copyMailStyles} data-testid="email">
             <img
               className={styles.gmailLogo}
               alt={t('alt.gmail') as string}
@@ -58,7 +60,11 @@ const Contacts = () => {
             />
             Mrozman24@gmail.com
           </h2>
-          {copyMessage && <p className={styles.copiedMessage}>{t('copied')}</p>}
+          {copyMessage && (
+            <p className={styles.copiedMessage} data-testid="copied">
+              {t('copied')}
+            </p>
+          )}
         </div>
         <div className="right"></div>
       </div>
