@@ -1,0 +1,19 @@
+.exampleButtonModal {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
+
+.gallerySection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px;
+}

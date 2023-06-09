@@ -1,6 +1,6 @@
 import styles from './Modal.module.css';
-import { useNavigate } from 'react-router-dom';
 import { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   closeModal: () => void;
@@ -8,11 +8,7 @@ type Props = {
 };
 
 const Modal = ({ closeModal, children }: Props) => {
-  const navigate = useNavigate();
-
-  const closeHandler = () => {
-    navigate('..');
-  };
+  const { t } = useTranslation();
 
   return (
     <>

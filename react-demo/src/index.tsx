@@ -6,9 +6,11 @@ import './i18n/i18n';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import StartLayout from './routes/StartLayout';
 import AboutLayout from './routes/AboutLayout';
-import APILayout, { loader as wheatherLoader } from './routes/APILayout';
-import GalleryLayout from './routes/GalleryLayout';
+import APILayout, { loader as weatherLoader } from './routes/APILayout';
+import GalleryLayout, { loader as galleryLoader } from './routes/GalleryLayout';
 import ContactLayout from './routes/ContactLayout';
+import GalleryModal from './components/Gallery/GalleryModal';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,11 +27,19 @@ const router = createBrowserRouter([
       {
         path: 'api',
         element: <APILayout />,
-        loader: wheatherLoader,
+        loader: weatherLoader,
       },
       {
         path: 'gallery',
         element: <GalleryLayout />,
+        loader: galleryLoader,
+        children: [
+          {
+            path: ':photoId',
+            element: <GalleryModal />,
+            loader: galleryLoader,
+          },
+        ],
       },
       {
         path: 'contact',

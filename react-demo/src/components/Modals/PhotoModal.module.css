@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 40%;
+  z-index: 1;
+}
+
+.modalForPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px black;
+  background-color: #385170;
+  color: #ececec;
+  padding: 20px 0px;
+  overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  max-width: 70%;
+  max-height: 70%;
+  min-height: 70%;
+}
+
+.modalPhoto {
+  max-height: 70vh;
+}
+
+.modalPhotoChildren {
+  display: flex;
+  flex-direction: column;
+}
+
+.photoButton {
+  width: 40px;
+  height: 80vh;
+  align-items: center;
+  background-color: #385170;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ececec;
+}
+
+.photoButton:hover {
+  background-color: #142d4c;
+  animation-name: appear;
+  animation-duration: 0.5s;
+}
+
+@keyframes appear {
+  from {
+    background-color: #385170;
+  }
+  to {
+    background-color: #142d4c;
+  }
+}
