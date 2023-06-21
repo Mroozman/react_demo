@@ -16,4 +16,6 @@
   flex-wrap: wrap;
   width: 60%;
   margin: 20px;
+  align-items: flex-start;
+  align-content: flex-start;
 }
