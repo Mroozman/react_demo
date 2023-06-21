@@ -4,9 +4,12 @@ import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
+import Pagination from '../Pagination/Pagination';
 const GallerySection = () => {
   const photos: PhotoModalData[] = useLoaderData() as PhotoModalData[];
   const [hoverIndex, setHoverIndex] = useState<number>();
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 4;
 
   const mouseEnterHandler = (index: number): void => {
     setHoverIndex(index);
@@ -16,12 +19,17 @@ const GallerySection = () => {
     setHoverIndex(undefined);
   };
 
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = photos.slice(indexOfFirstRecord, indexOfLastRecord);
+  const nPages = Math.ceil(photos.length / recordsPerPage);
+
   return (
     <div className={styles.gallery}>
       <div className="left"></div>
       <div className={styles.gallerySection}>
         <Outlet />
-        {photos.map((photo: PhotoModalData, index: number) => {
+        {currentRecords.map((photo: PhotoModalData, index: number) => {
           return (
             <Link
               style={{
@@ -46,6 +54,11 @@ const GallerySection = () => {
             ></Link>
           );
         })}
+        <Pagination
+          nPages={nPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
       <div className="right"></div>
     </div>

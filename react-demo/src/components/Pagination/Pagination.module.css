@@ -1,0 +1,40 @@
+.paginationList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.paginationButton {
+  min-height: 40px;
+  min-width: 20px;
+  font-size: 15px;
+  color: #ececec;
+  background-color: #142d4c;
+  border: 1px solid transparent;
+  padding: 0 10px;
+}
+
+.paginationButtonActive {
+  min-height: 40px;
+  min-width: 20px;
+  font-size: 15px;
+  color: #ececec;
+  background-color: #142d4c;
+  border: 1px solid #9fd3c7;
+  padding: 0 10px;
+}
+
+.paginationButton:last-child {
+  padding-right: 20px;
+}
+
+.paginationButton:first-child {
+  padding-left: 20px;
+}
+
+.paginationButton:hover {
+  cursor: pointer;
+  border: 1px dotted #9fd3c7;
+}

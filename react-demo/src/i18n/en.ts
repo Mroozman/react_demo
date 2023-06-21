@@ -60,5 +60,7 @@ export const en = {
       messenger: 'Messenger logo',
       gmail: 'Gmail logo',
     },
+    next: 'Next',
+    previous: 'Previous',
   },
 } as const;
