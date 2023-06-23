@@ -17,19 +17,27 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
     if (currentPage !== nPages) {
       setCurrentPage(currentPage + 1);
     }
+    console.log(currentPage);
   };
 
   const prevPage = (): void => {
-    if (currentPage !== nPages) {
+    if (currentPage !== 1) {
       setCurrentPage(currentPage - 1);
     }
+    console.log(currentPage);
   };
 
   return (
     <div className={styles.paginationList}>
-      <button className={styles.paginationButton} onClick={prevPage}>
-        {t('previous')}
-      </button>
+      {nPages > 1 && (
+        <button
+          disabled={currentPage === 1 ? true : false}
+          className={styles.paginationButton}
+          onClick={prevPage}
+        >
+          {t('previous')}
+        </button>
+      )}
       {pageNumbers.map((pageNumber: number, index: number): ReactNode => {
         if (currentPage === index + 1) {
           return (
@@ -50,29 +58,16 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
             </button>
           );
         }
-
-        // return
-        // {
-        //   currentPage !== index ? (
-        //     <button
-        //       className={styles.paginationButton}
-        //       onClick={() => setCurrentPage(pageNumber)}
-        //     >
-        //       {pageNumber}
-        //     </button>
-        //   ) : (
-        //     <button
-        //       className={styles.paginationButtonActive}
-        //       onClick={() => setCurrentPage(pageNumber)}
-        //     >
-        //       {pageNumber}
-        //     </button>
-        //   );
-        // }
       })}
-      <button className={styles.paginationButton} onClick={nextPage}>
-        {t('next')}
-      </button>
+      {nPages > 1 && (
+        <button
+          disabled={currentPage === nPages ? true : false}
+          className={styles.paginationButton}
+          onClick={nextPage}
+        >
+          {t('next')}
+        </button>
+      )}
     </div>
   );
 };

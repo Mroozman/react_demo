@@ -9,7 +9,7 @@ const GallerySection = () => {
   const photos: PhotoModalData[] = useLoaderData() as PhotoModalData[];
   const [hoverIndex, setHoverIndex] = useState<number>();
   const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 4;
+  const recordsPerPage = 8;
 
   const mouseEnterHandler = (index: number): void => {
     setHoverIndex(index);

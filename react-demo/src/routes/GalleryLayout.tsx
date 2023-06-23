@@ -15,6 +15,14 @@ export function loader(): PhotoModalData[] {
     require('../images/laptop.jpg'),
     require('../images/messenger.png'),
     require('../images/kontakt.jpg'),
+    require('../images/kontakt.jpg'),
+    require('../images/messenger.png'),
+    require('../images/laptop.jpg'),
+    require('../images/reactLogo.png'),
+    require('../images/gmail.png'),
+    require('../images/wide.jpg'),
+    require('../images/gallery.jpg'),
+    require('../images/ja.jpg'),
   ];
 
   const convertToPhotoModalData = (photosUrls: string[]): PhotoModalData[] => {
