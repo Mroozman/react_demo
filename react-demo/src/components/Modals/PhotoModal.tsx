@@ -22,7 +22,11 @@ const PhotoModal = ({ photos }: Props) => {
   };
 
   useEffect(() => {
-    navigate(`/gallery/${currentPhoto.photoId}`);
+    const path = window.location.pathname.substring(
+      1,
+      window.location.pathname.lastIndexOf('/')
+    );
+    navigate(`/${path}/${currentPhoto.photoId}`);
   }, [navigate, currentPhoto]);
 
   const getFirstPhoto = (): PhotoModalData => {
