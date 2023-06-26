@@ -19,3 +19,22 @@
   align-items: flex-start;
   align-content: flex-start;
 }
+
+.dynamicGalleryLink {
+  color: #ececec;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.dynamicGalleryLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dynamicGalleryLinkWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}

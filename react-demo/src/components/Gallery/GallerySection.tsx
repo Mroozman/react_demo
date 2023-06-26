@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 import { useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 import Pagination from '../Pagination/Pagination';
+import { useTranslation } from 'react-i18next';
 const GallerySection = () => {
+  const { t } = useTranslation();
   const photos: PhotoModalData[] = useLoaderData() as PhotoModalData[];
   const [hoverIndex, setHoverIndex] = useState<number>();
   const [currentPage, setCurrentPage] = useState(1);
@@ -59,6 +61,11 @@ const GallerySection = () => {
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
+        <div className={styles.dynamicGalleryLinkWrap}>
+          <Link className={styles.dynamicGalleryLink} to={'../dynamic-gallery'}>
+            {t('dynamicGallery')}
+          </Link>
+        </div>
       </div>
       <div className="right"></div>
     </div>

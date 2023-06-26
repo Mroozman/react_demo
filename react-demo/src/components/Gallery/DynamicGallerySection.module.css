@@ -1,0 +1,15 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
+
+.gallerySection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px;
+  align-items: flex-start;
+  align-content: flex-start;
+}

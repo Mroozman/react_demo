@@ -62,5 +62,6 @@ export const pl = {
     },
     next: 'Następna',
     previous: 'Poprzednia',
+    dynamicGallery: 'Kliknij żeby sprawdzić dynamiczną galerię!',
   },
 } as const;
