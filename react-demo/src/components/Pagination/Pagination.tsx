@@ -42,6 +42,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
         if (currentPage === index + 1) {
           return (
             <button
+              key={index + 1}
               className={styles.paginationButtonActive}
               onClick={() => setCurrentPage(pageNumber)}
             >
