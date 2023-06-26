@@ -17,14 +17,12 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
     if (currentPage !== nPages) {
       setCurrentPage(currentPage + 1);
     }
-    console.log(currentPage);
   };
 
   const prevPage = (): void => {
     if (currentPage !== 1) {
       setCurrentPage(currentPage - 1);
     }
-    console.log(currentPage);
   };
 
   return (
@@ -34,6 +32,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
           disabled={currentPage === 1 ? true : false}
           className={styles.paginationButton}
           onClick={prevPage}
+          key="previous"
         >
           {t('previous')}
         </button>
@@ -65,6 +64,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
           disabled={currentPage === nPages ? true : false}
           className={styles.paginationButton}
           onClick={nextPage}
+          key="next"
         >
           {t('next')}
         </button>

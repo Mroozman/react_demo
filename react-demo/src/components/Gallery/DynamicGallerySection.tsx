@@ -6,6 +6,7 @@ import styles from './DynamicGallerySection.module.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
+import Pagination from '../Pagination/Pagination';
 
 const DynamicGallerySection = () => {
   const apiCatPhotos: ApiCatPhoto[] = useLoaderData() as ApiCatPhoto[];
@@ -15,6 +16,8 @@ const DynamicGallerySection = () => {
     })
   );
   const [hoverIndex, setHoverIndex] = useState<number>();
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordsPerPage = 8;
 
   const mouseEnterHandler = (index: number): void => {
     setHoverIndex(index);
@@ -24,12 +27,17 @@ const DynamicGallerySection = () => {
     setHoverIndex(undefined);
   };
 
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = catPhotos.slice(indexOfFirstRecord, indexOfLastRecord);
+  const nPages = Math.ceil(catPhotos.length / recordsPerPage);
+
   return (
     <div className={styles.gallery}>
       <div className="left"></div>
       <div className={styles.gallerySection}>
         <Outlet context={[catPhotos]} />
-        {catPhotos.map((photo: PhotoModalData, index: number) => {
+        {currentRecords.map((photo: PhotoModalData, index: number) => {
           return (
             <Link
               style={{
@@ -54,6 +62,11 @@ const DynamicGallerySection = () => {
             ></Link>
           );
         })}
+        <Pagination
+          nPages={nPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
       <div className="right"></div>
     </div>
