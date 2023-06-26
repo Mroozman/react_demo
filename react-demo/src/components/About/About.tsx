@@ -2,7 +2,7 @@ import styles from './About.module.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className={styles.aboutSection}>
@@ -33,19 +33,35 @@ const About = () => {
             src={require('../../images/github.png')}
           />
         </Link>
-        <Link
-          className={styles.cv}
-          to="/files/MMCV.pdf"
-          target="_blank"
-          download
-        >
-          {t('cv')}
-          <img
-            className={styles.cvLogo}
-            alt={t('alt.cv') as string}
-            src={require('../../images/cv.png')}
-          />
-        </Link>
+        {i18n.languages[0] === 'pl' ? (
+          <Link
+            className={styles.cv}
+            to="/files/Maciej Mróz CV.pdf"
+            target="_blank"
+            download
+          >
+            {t('cv')}
+            <img
+              className={styles.cvLogo}
+              alt={t('alt.cv') as string}
+              src={require('../../images/cv.png')}
+            />
+          </Link>
+        ) : (
+          <Link
+            className={styles.cv}
+            to="/files/Maciej Mróz CV eng.pdf"
+            target="_blank"
+            download
+          >
+            {t('cv')}
+            <img
+              className={styles.cvLogo}
+              alt={t('alt.cv') as string}
+              src={require('../../images/cv.png')}
+            />
+          </Link>
+        )}
       </div>
     </>
   );
