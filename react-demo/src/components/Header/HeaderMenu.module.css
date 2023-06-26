@@ -12,7 +12,7 @@
 
 .menuButton:hover {
   cursor: pointer;
-  color: white;
+  color: #9fd3c7;
   border-style: solid;
   border-color: #9fd3c7;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
