@@ -51,6 +51,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
         } else {
           return (
             <button
+              key={index + 1}
               className={styles.paginationButton}
               onClick={() => setCurrentPage(pageNumber)}
             >
