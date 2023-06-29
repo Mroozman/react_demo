@@ -4,7 +4,7 @@
   border-style: solid;
   border-color: transparent;
   color: #ececec;
-  padding: 5px 20px;
+  padding: 5px 30px;
   border-radius: 25px;
   transition: color 0.25s, box-shadow 0.25s;
   text-decoration: none;
@@ -18,4 +18,43 @@
   -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+}
+
+.menuButtonActive {
+  font-size: 26px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  color: #9fd3c7;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+}
+
+.menuButtonActive:hover {
+  cursor: pointer;
+  color: #9fd3c7;
+  border-style: solid;
+  border-color: #9fd3c7;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 1368px) {
+  .menuButton {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .menuButton {
+    padding: 5px 5px;
+    font-size: 24px;
+  }
+  .menuButtonActive {
+    padding: 5px 5px;
+    font-size: 24px;
+  }
 }

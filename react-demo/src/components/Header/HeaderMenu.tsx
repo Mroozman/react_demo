@@ -1,24 +1,49 @@
 import styles from './HeaderMenu.module.css';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = () => {
   const { t } = useTranslation();
+
   return (
-    <>
-      <Link to="about" className={styles.menuButton} data-testid="about">
+    <nav id="navbar">
+      <NavLink
+        to="about"
+        className={({ isActive }) =>
+          isActive ? styles.menuButtonActive : styles.menuButton
+        }
+        data-testid="about"
+      >
         {t('about')}
-      </Link>
-      <Link to="api" className={styles.menuButton} data-testid="api">
+      </NavLink>
+      <NavLink
+        to="api"
+        className={({ isActive }) =>
+          isActive ? styles.menuButtonActive : styles.menuButton
+        }
+        data-testid="api"
+      >
         API
-      </Link>
-      <Link to="gallery" className={styles.menuButton} data-testid="gallery">
+      </NavLink>
+      <NavLink
+        to="gallery"
+        className={({ isActive }) =>
+          isActive ? styles.menuButtonActive : styles.menuButton
+        }
+        data-testid="gallery"
+      >
         {t('gallery')}
-      </Link>
-      <Link to="contact" className={styles.menuButton} data-testid="contact">
+      </NavLink>
+      <NavLink
+        to="contact"
+        className={({ isActive }) =>
+          isActive ? styles.menuButtonActive : styles.menuButton
+        }
+        data-testid="contact"
+      >
         {t('contact')}
-      </Link>
-    </>
+      </NavLink>
+    </nav>
   );
 };
 export default HeaderMenu;
