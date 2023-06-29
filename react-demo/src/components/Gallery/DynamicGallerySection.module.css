@@ -13,3 +13,13 @@
   align-items: flex-start;
   align-content: flex-start;
 }
+
+@media (max-width: 1488px) {
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallerySection {
+    justify-content: center;
+  }
+}
