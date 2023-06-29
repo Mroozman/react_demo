@@ -57,3 +57,45 @@
 .attributeLink:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1127px) {
+  .cardSelected,
+  .attributeLink {
+    font-size: 18px;
+  }
+
+  .drawCardButton,
+  .drawAnotherCardButton {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardSelected {
+    align-self: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .selectedCardImage {
+    width: 90px;
+    height: 120px;
+  }
+
+  .drawCardButton,
+  .drawAnotherCardButton {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .selectedCardImage {
+    width: 60px;
+    height: 90px;
+  }
+
+  .cardSelected,
+  .attributeLink {
+    font-size: 16px;
+  }
+}

@@ -16,3 +16,14 @@
 .attributeLink:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1127px) {
+  .timezone {
+    font-size: 20px;
+  }
+
+  .weatherInfo,
+  .attributeLink {
+    font-size: 18px;
+  }
+}
