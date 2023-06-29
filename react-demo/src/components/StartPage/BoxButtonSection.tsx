@@ -12,7 +12,7 @@ const BoxButtonsSection = () => {
     <div className={styles.boxButtons}>
       <div className={styles.boxButtonsRow}>
         <div className="left"></div>
-        <div className="center">
+        <div className={styles.center}>
           <span className={styles.appearLeft}>
             <BoxButton
               pathForButton="about"
@@ -32,7 +32,7 @@ const BoxButtonsSection = () => {
       </div>
       <div className={styles.boxButtonsRow}>
         <div className="left"></div>
-        <div className="center">
+        <div className={styles.center}>
           <span className={styles.appearLeft}>
             <BoxButton
               pathForButton="gallery"

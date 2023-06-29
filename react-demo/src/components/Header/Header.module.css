@@ -102,3 +102,9 @@
     padding: 20px 90px;
   }
 }
+
+@media (max-width: 350px) {
+  .header {
+    padding: 20px 170px;
+  }
+}

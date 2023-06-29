@@ -58,3 +58,14 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: 350px) {
+  .menuButton {
+    padding: 0px 5px;
+    font-size: 20px;
+  }
+  .menuButtonActive {
+    padding: 0px 5px;
+    font-size: 20px;
+  }
+}

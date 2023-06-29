@@ -25,9 +25,9 @@ const BoxButton = ({
 
   const boxButton: CSS.Properties = {
     display: 'flex',
-    width: '350px',
-    height: '200px',
-    margin: '10px 40px',
+    width: window.innerWidth > 500 ? '350px' : '250px',
+    height: window.innerWidth > 500 ? '200px' : '150px',
+    margin: window.innerWidth > 500 ? '10px 40px' : '10px 0px',
     borderRadius: '25px',
     borderStyle: isHover ? 'solid' : 'solid',
     borderColor: isHover ? '#9fd3c7' : 'transparent',
