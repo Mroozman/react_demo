@@ -75,3 +75,41 @@
     opacity: 0%;
   }
 }
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 787px) {
+  .linkedinLogo,
+  .messengerLogo,
+  .gmailLogo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 16px;
+  }
+}
