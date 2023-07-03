@@ -34,3 +34,19 @@
   cursor: pointer;
   margin-right: 20px;
 }
+
+@media (max-width: 434px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 434px) {
+  /* .footer {
+    padding: 0 40px;
+  } */
+
+  .footerText {
+    font-size: 13px;
+  }
+}

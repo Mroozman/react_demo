@@ -103,8 +103,14 @@
   }
 }
 
+@media (max-width: 434px) {
+  .header {
+    padding: 20px 235px;
+  }
+}
+
 @media (max-width: 350px) {
   .header {
-    padding: 20px 170px;
+    padding: 20px 200px;
   }
 }
