@@ -15,7 +15,7 @@ const About = () => {
           />
           <span className={styles.personalTexts}>
             <h2 className={styles.myName}>Maciej Mróz</h2>
-            <p>{t('aboutMe')}</p>
+            <p data-testid="personalText">{t('aboutMe')}</p>
           </span>
         </div>
         <div className="right"></div>
@@ -25,6 +25,7 @@ const About = () => {
           className={styles.github}
           to="https://github.com/Mroozman"
           target="_blank"
+          data-testid="githubButton"
         >
           {t('github')}
           <img
@@ -53,6 +54,7 @@ const About = () => {
             to="/files/Maciej Mróz CV eng.pdf"
             target="_blank"
             download
+            data-testid="cvButton"
           >
             {t('cv')}
             <img
