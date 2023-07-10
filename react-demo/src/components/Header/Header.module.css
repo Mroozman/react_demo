@@ -1,11 +1,13 @@
 .header {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 50px;
+  height: 100px;
+  width: 100%;
   background-color: #142d4c;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   position: sticky;
   top: 0;
 }
@@ -90,14 +92,14 @@
 @media (max-width: 787px) {
   .header {
     flex-direction: column;
-    height: 100px;
+    height: 120px;
   }
   p {
     margin: 0px;
   }
 }
 
-@media (max-width: 590px) {
+/* @media (max-width: 590px) {
   .header {
     padding: 20px 90px;
   }
@@ -107,10 +109,10 @@
   .header {
     padding: 20px 235px;
   }
-}
+} */
 
 @media (max-width: 350px) {
   .header {
-    padding: 20px 200px;
+    width: 100%;
   }
 }
