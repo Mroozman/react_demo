@@ -28,3 +28,21 @@ h3 {
 .attributeLink:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 787px) {
+  a {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 457px) {
+  a {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}

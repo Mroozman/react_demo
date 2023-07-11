@@ -48,3 +48,9 @@
   color: #9fd3c7;
   border: 1px solid #9fd3c7;
 }
+
+@media (max-width: 787px) {
+  .modal {
+    width: 70%;
+  }
+}
