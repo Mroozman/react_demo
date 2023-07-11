@@ -98,21 +98,3 @@
     margin: 0px;
   }
 }
-
-/* @media (max-width: 590px) {
-  .header {
-    padding: 20px 90px;
-  }
-}
-
-@media (max-width: 434px) {
-  .header {
-    padding: 20px 235px;
-  }
-} */
-
-@media (max-width: 350px) {
-  .header {
-    width: 100%;
-  }
-}
