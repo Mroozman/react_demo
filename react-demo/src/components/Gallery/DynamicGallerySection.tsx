@@ -43,6 +43,8 @@ const DynamicGallerySection = () => {
               style={{
                 maxWidth: '200px',
                 maxHeight: '200px',
+                minWidth: '200px',
+                minHeight: '200px',
                 width: '100%',
                 height: '100%',
                 backgroundImage: `url(${photo.photoUrl})`,

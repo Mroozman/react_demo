@@ -1,7 +1,7 @@
 .gallery {
   display: flex;
   flex-direction: row;
-  height: 85vh;
+  margin-bottom: 40px;
 }
 
 .gallerySection {
@@ -12,6 +12,7 @@
   margin: 20px;
   align-items: flex-start;
   align-content: flex-start;
+  min-height: 85vh;
 }
 
 @media (max-width: 1488px) {
