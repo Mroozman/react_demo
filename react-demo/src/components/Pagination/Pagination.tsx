@@ -34,7 +34,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
           onClick={prevPage}
           key="previous"
         >
-          {t('previous')}
+          {window.innerWidth < 430 ? '<' : t('previous')}
         </button>
       )}
       {pageNumbers.map((pageNumber: number, index: number): ReactNode => {
@@ -67,7 +67,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }: Props) => {
           onClick={nextPage}
           key="next"
         >
-          {t('next')}
+          {window.innerWidth < 430 ? '>' : t('next')}
         </button>
       )}
     </div>
