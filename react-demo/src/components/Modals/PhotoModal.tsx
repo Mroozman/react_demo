@@ -69,9 +69,14 @@ const PhotoModal = ({ photos }: Props) => {
     <>
       <div className={styles.backdrop} onClick={closeModalHandler}></div>
       <dialog open className={styles.modalForPhoto}>
-        <button className={styles.photoButton} onClick={previousPictureHandler}>
-          {'<'}
-        </button>
+        {window.innerWidth > 530 && (
+          <button
+            className={styles.photoButton}
+            onClick={previousPictureHandler}
+          >
+            {'<'}
+          </button>
+        )}
         <div>
           <img
             className={styles.modalPhoto}
@@ -79,9 +84,27 @@ const PhotoModal = ({ photos }: Props) => {
             alt={currentPhoto.photoUrl}
           ></img>
         </div>
-        <button className={styles.photoButton} onClick={nextPictureHandler}>
-          {'>'}
-        </button>
+        {window.innerWidth > 530 && (
+          <button className={styles.photoButton} onClick={nextPictureHandler}>
+            {'>'}
+          </button>
+        )}
+        {window.innerWidth < 530 && (
+          <div className={styles.bottomButtons}>
+            <button
+              className={styles.bottomPhotoButton}
+              onClick={previousPictureHandler}
+            >
+              {'<'}
+            </button>
+            <button
+              className={styles.bottomPhotoButton}
+              onClick={nextPictureHandler}
+            >
+              {'>'}
+            </button>
+          </div>
+        )}
       </dialog>
     </>
   );

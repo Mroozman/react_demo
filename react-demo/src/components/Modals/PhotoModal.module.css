@@ -12,14 +12,13 @@
 .modalForPhoto {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   border: none;
   border-radius: 6px;
   box-shadow: 0 2px 8px black;
   background-color: #385170;
   color: #ececec;
-  padding: 20px 0px;
+  padding: 15px 0px;
   overflow: hidden;
   z-index: 1;
   position: fixed;
@@ -38,7 +37,7 @@
 }
 
 .photoButton {
-  width: 40px;
+  min-width: 40px;
   height: 80vh;
   align-items: center;
   background-color: #385170;
@@ -56,11 +55,73 @@
   animation-duration: 0.5s;
 }
 
+.bottomButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottomPhotoButton {
+  min-width: 40px;
+  align-items: center;
+  background-color: #385170;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ececec;
+}
+
 @keyframes appear {
   from {
     background-color: #385170;
   }
   to {
     background-color: #142d4c;
+  }
+}
+
+@media (max-width: 1070px) {
+  .modalPhoto {
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 930px) {
+  .modalPhoto {
+    max-height: 50vh;
+  }
+  .modalForPhoto {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .modalPhoto {
+    max-height: 40vh;
+  }
+  .modalForPhoto {
+    min-height: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 660px) {
+  .modalForPhoto {
+    min-height: 50%;
+    height: 50%;
+    padding: 5px 0px;
+  }
+}
+
+@media (max-width: 530px) {
+  .modalForPhoto {
+    flex-direction: column;
+    padding: 0px;
+    min-height: 280px;
+    height: 280px;
   }
 }
