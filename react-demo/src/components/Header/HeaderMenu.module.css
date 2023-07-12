@@ -59,6 +59,20 @@
   }
 }
 
+@media (max-width: 787px) {
+  .menuButton:hover {
+    border: none;
+    box-shadow: none;
+  }
+  .menuButtonActive {
+    border: none;
+    box-shadow: none;
+  }
+  .menuButtonActive:hover {
+    border: none;
+    box-shadow: none;
+  }
+}
 @media (max-width: 350px) {
   .menuButton {
     padding: 0px 5px;
