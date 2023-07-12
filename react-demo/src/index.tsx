@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import './i18n/i18n';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import StartLayout from './routes/StartLayout';
 import AboutLayout from './routes/AboutLayout';
 import APILayout, { loader as weatherLoader } from './routes/APILayout';
@@ -15,7 +15,7 @@ import DynamicGalleryLayout, {
 } from './routes/DynamicGalleryLayout';
 import DynamicGalleryModal from './components/Gallery/DynamicGalleryModal';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
