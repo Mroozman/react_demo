@@ -17,7 +17,7 @@ import DynamicGalleryModal from './components/Gallery/DynamicGalleryModal';
 
 const router = createHashRouter([
   {
-    path: '/router_demo',
+    path: '/',
     element: <App />,
     children: [
       {
